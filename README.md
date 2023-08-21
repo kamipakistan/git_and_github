@@ -194,7 +194,20 @@ Before merging branches, it's a good practice to review the differences between 
    ```bash
    git diff   # Show differences between 'master' and 'new-feature'
    ```
+   > When starting work on a new branch in Git, we follow these simplified steps:
+   > 1. Ensure You're on the Right Branch.
+   > 2. Make Your Changes.
+   > 3. Stage Your Changes.
+   > 4. Create a Commit.
+   > 5. Repeat [ii-iv] as Needed:
+   > 6. Push Your Changes (Optional).
 
+5. **Push Your Changes (Optional):**
+While not required, you have the option to push your branch and commits to a remote repository to collaborate with others or to keep a backup. Use the git push command to push your local changes to the remote repository:
+   ```bash
+   git push origin new-feature
+   ```
+   
 
 ## Collaborating on GitHub
 
