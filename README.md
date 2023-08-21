@@ -45,6 +45,17 @@ After installing Git, you need to configure it with your name and email. This in
     git config --global user.email "your@email.com"
     ```
 
+## Basic Git Commands
+
+Once you have Git set up, it's important to grasp the basic commands that you'll use frequently:
+
+- `git init`: Initialize a new Git repository
+- `git add`: Add changes to the staging area
+- `git commit`: Create a new commit with staged changes
+- `git status`: Check the status of your working directory
+- `git log`: View commit history
+- `git diff`: Compare changes between commits
+
 ## Creating Your First Git Repository Locally
 
 Now that Git is set up, let's create your first Git repository.
@@ -136,30 +147,22 @@ Below is a step-by-step guide on how to push your local Git repository to GitHub
 1. On your local machine, navigate to the directory of your Git repository using the terminal.
 2. Run the following command to update the remote URL to use SSH, replacing `username` with your GitHub username and `repository` with your repository name:
    ```bash
-   git remote set-url origin git@github.com:username/repository.git
+   git remote add origin git@github.com:username/repository.git
+   ```
+   Example: `git remote add origin git@github.com:kamipakistan/git_and_github.git`
+   ```bash
+   git branch -M main
    ```
 
 ## Pushing to GitHub
 1. First, ensure that you have committed your changes locally using `git commit`.
 2. Now, push your local repository to GitHub's remote repository using the following command:
    ```bash
-   git push -u origin main
+   git push origin main
    ```
-Here, `-u` sets up tracking between your local `main or master` branch and the remote `origin/main`.
-
-With SSH keys set up, your local repository will be securely connected to your GitHub account. You can now push changes to your remote repository without needing to enter your GitHub credentials, ensuring a smoother and more secure authentication process.
+   With SSH keys set up, your local repository will be securely connected to your GitHub account. You can now push changes to your remote repository without needing to enter your GitHub credentials, ensuring a smoother and more secure authentication process.
 
 
-## Basic Git Commands
-
-Once you have Git set up, it's important to grasp the basic commands that you'll use frequently:
-
-- `git init`: Initialize a new Git repository
-- `git add`: Add changes to the staging area
-- `git commit`: Create a new commit with staged changes
-- `git status`: Check the status of your working directory
-- `git log`: View commit history
-- `git diff`: Compare changes between commits
 
 ## Branching and Merging
 
