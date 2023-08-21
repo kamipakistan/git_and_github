@@ -167,7 +167,7 @@ Cloning allows you to create a local copy of a remote repository hosted on platf
    This will create a new folder with the repository's name and download its contents.
 
 
-## Branching and Merging
+## Git Branching
 
 Git makes it easy to work on multiple aspects of a project simultaneously through branching:
 ### Creating and Switching Between Branches
@@ -207,7 +207,25 @@ While not required, you have the option to push your branch and commits to a rem
    ```bash
    git push origin new-feature
    ```
-   
+
+## Merging Branches and Resolving Conflicts:
+After working on a feature or bug fix in a separate branch, you can merge the changes back into the main branch (often called the "master" or "main" branch). The `git merge` command is used for this purpose. For example, to merge the changes from the "new-feature" branch into the "main" branch:
+
+1. **Merging Branches (Locally):**
+Switch to the branch you want to merge into (e.g., main)
+   ```commandline
+   git checkout main
+   ```
+   Merge the feature-branch into main
+   ```bash
+   git merge new-feature
+   ```
+2. **Merging Remotely (using Pull Request on GitHub):**
+Assuming you've pushed your feature-branch to the remote repository:
+
+   - On GitHub, create a Pull Request (PR) from `feature-branch` to `main-branch`.
+   - Reviewers will review your changes, discuss them, and eventually approve the PR.
+   - Once approved, the changes can be merged using the **Merge** button on the PR page.
 
 ## Collaborating on GitHub
 
