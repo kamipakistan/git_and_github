@@ -92,7 +92,7 @@ Below is a step-by-step guide on how to push your local Git repository to GitHub
 
 1. Log in to your GitHub account.
 2. Click on the "+" sign at the top right corner and select "New repository."
-3. Fill in the repository name, description, and other settings.
+3. Fill in the repository name, description, and don't add a license, `README.md` file, or any other files; otherwise, when pushing your repo from the local machine, it will raise a conflict because files already exist in the remote directory.
 4. Click "Create repository."
 
 #### Set Up SSH Keys for Authentication
